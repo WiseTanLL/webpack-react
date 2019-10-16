@@ -1,0 +1,12 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+@font-face{
+  font-family: 'misstanfort';
+  src: url(~style/font/missstanfort.ttf);
+}
+h1{
+  font-family: 'misstanfort';
+  background: url(~img/man.png) center no-repeat;
+}

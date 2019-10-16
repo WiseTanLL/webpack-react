@@ -1,0 +1,11 @@
+node_modules
+.idea
+npm-debug.log
+.svn
+package-lock.json
+*.psd
+code/src/containers/Test/
+yarn.lock
+yarn-error.log
+dist/
+.DS_Store
