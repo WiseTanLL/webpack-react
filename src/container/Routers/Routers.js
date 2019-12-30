@@ -1,13 +1,13 @@
 /*
  * @Author: tanjun
  * @Date: 2019-07-30 17:55:51
- * @LastEditors: tanjun
- * @LastEditTime: 2019-10-14 10:56:35
+ * @LastEditors  : tanjun
+ * @LastEditTime : 2019-12-30 16:15:02
  * @Description: description
  */
 
 import { HashRouter, Switch, Route } from 'react-router-dom'
-import { Test, SurroundStar } from 'com/index'
+import { Test } from 'com/index'
 
 export default class Routers extends Component {
     constructor(props){

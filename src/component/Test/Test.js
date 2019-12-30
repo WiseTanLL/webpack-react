@@ -2,12 +2,14 @@
  * @Description: 
  * @Author: tanjun
  * @Data: Do not edit
- * @LastEditors: tanjun
- * @LastEditTime: 2019-10-14 11:09:48
+ * @LastEditors  : tanjun
+ * @LastEditTime : 2019-12-30 16:16:07
  */
+import './Test.scss';
 export default class Test extends Component {
     constructor(props) {
         super(props)
+        console.log(1)
     }
     componentDidMount() {
         // Axios.get('/aa/bb').then((res) => {

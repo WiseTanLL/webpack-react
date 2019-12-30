@@ -1,8 +1,8 @@
 /*
  * @Author: tanjun
  * @Date: 2019-07-29 16:09:03
- * @LastEditors: tanjun
- * @LastEditTime: 2019-08-02 17:40:18
+ * @LastEditors  : tanjun
+ * @LastEditTime : 2019-12-30 16:29:21
  * @Description: 公共webpack配置文件
  */
 
@@ -18,7 +18,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, '../dist'), // 打包出口文件路径
-        filename: '[name].[hash:8].js' // 打包出口文件名称 [name]：复制入口文件名称，[hash:8]：随机八位字符
+        filename: 'js/[name].[hash:8].js' // 打包出口文件名称 [name]：复制入口文件名称，[hash:8]：随机八位字符
     },
     optimization: {
         splitChunks: {
