@@ -2,7 +2,7 @@
  * @Author: tanjun
  * @Date: 2019-07-29 16:09:03
  * @LastEditors  : tanjun
- * @LastEditTime : 2019-12-30 16:29:21
+ * @LastEditTime : 2019-12-31 10:34:42
  * @Description: 公共webpack配置文件
  */
 
@@ -14,7 +14,10 @@ const webpack = require('webpack')
 module.exports = {
     cache: true,
     entry: {
-        app: ['babel-polyfill', 'react-hot-loader/patch', './src/index.js'] // 入口文件，可添加多个入口文件
+        app: [
+            'babel-polyfill', 
+            'react-hot-loader/patch', // 热更新部分更新
+            './src/index.js'] // 入口文件，可添加多个入口文件
     },
     output: {
         path: path.join(__dirname, '../dist'), // 打包出口文件路径

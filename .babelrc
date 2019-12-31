@@ -11,6 +11,6 @@
     ],
     "plugins": [
         ["@babel/plugin-transform-runtime", {"corejs": 2}],
-        ["react-hot-loader/babel"]
+        ["react-hot-loader/babel"] // 热更新部分更新
     ]
 }
