@@ -7,7 +7,7 @@
  */
 
 module.exports = {
-    isPc: false, // 默认是pc项目 /(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)
+    isPc: true, // 默认是pc项目 /(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)
     mock: true, // 全局是否mock
     devHost: 'localhost', // 本地服务启动host
     devPort: 8081, // 本地服务启动端口号

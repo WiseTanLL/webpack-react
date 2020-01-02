@@ -18,7 +18,7 @@ export default class Routers extends Component {
             <HashRouter>
                 <Switch>
                     <Route path={ '/test' } component={ Test }></Route>
-                    {/* <Route path={ '/' } component={ SurroundStar }></Route> */}
+                    <Route path={ '/' } component={ Test }></Route>
                 </Switch>
             </HashRouter>
         )

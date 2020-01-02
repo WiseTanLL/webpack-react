@@ -11,12 +11,16 @@ import 'd3-selection-multi';
 import 'style/index.scss';
 import { Routers } from 'con/index';
 import * as baseConfig from '@/loader/base.config.js';
+import { Provider } from 'react-redux';
+import store from '@/redux/store/index';
 
 if (!baseConfig.isPc){ // 匹配为移动端
   require('amfe-flexible/index'); // 加载flexible
 }
 ReactDOM.render(
-  <Routers/>, 
+  <Provider store={store}>
+    <Routers/>
+  </Provider>,
   document.getElementById('react-app')
 )
 

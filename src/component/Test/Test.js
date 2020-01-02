@@ -6,10 +6,25 @@
  * @LastEditTime : 2019-12-30 16:16:07
  */
 import './Test.scss';
-export default class Test extends Component {
+import { connect } from 'react-redux';
+import { 
+    REDUX_DATA_SAGA,
+    REDUX_DATA_SYNCH,
+ } from '@/redux/actions/index';
+class Test extends Component {
     constructor(props) {
         super(props)
-        console.log(1)
+    }
+    onclick() {
+        // 利用saga异步发送state
+        // this.props.dispatch({
+        //     type: REDUX_DATA_SAGA
+        // });
+        
+        // 同步发送state
+        this.props.dispatch({
+            type: REDUX_DATA_SYNCH
+        });
     }
     componentDidMount() {
         // Axios.get('/aa/bb').then((res) => {
@@ -17,13 +32,15 @@ export default class Test extends Component {
         // }, (err) => {
         //     console.log(err)
         // })
-        // let svg = d3.select('#svg-d3')
-        // svg.attrs({
-        //     name: 1
-        // })
-        // console.log(svg.node())
     }
     render() {
-        return (<div id="svg-d3"></div>)
+        return (
+            <div id="svg-d3" onClick={this.onclick.bind(this)}>{this.props.number}</div>
+        )
     }
 }
+export default connect(
+    state => ({
+        number: state.number
+    })
+)(Test);
